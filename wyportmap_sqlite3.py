@@ -20,7 +20,8 @@ global_dbcoon = 'sqlite:////tmp/reportdb.sql'
 
 # global_dbcoon = 'mysql+mysqldb://用户名:密码@数据库服务器IP:数据库端口/数据库名称'
 # global_options = '-sT -P0 -sV -O --script=banner -p T:21-25,80-89,110,143,443,513,873,1080,1433,1521,1158,3306-3308,3389,3690,5900,6379,7001,8000-8090,9000,9418,27017-27019,50060,111,11211,2049'
-global_options = '-sT -P0 -sV -O --script=banner -p T:80'
+# global_options = '-sT -sV  --script=banner -p T:21-25,80-89,110,143,443,513,873,1080,1433,1521,1158,3306-3308,3389,3690,5900,6379,7001,8000-8090,9000,9418,27017-27019,50060,111,11211,2049'
+global_options = '-sT -sV  --script=banner -p T:80-89,8000-8090,9000'
 
 # 处理端口状态
 global_log_states = ['open'] # open, filtered, closed, unfiltered
